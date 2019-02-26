@@ -15,7 +15,6 @@ namespace Advent_Of_Code_2018
             var operation = new Operation();
             var foundOperations = new List<Operation.ops>();
             var partOneInput = input.Substring(0, input.IndexOf("Stop")).Split("\n\r\n", StringSplitOptions.RemoveEmptyEntries);
-            //var correctOps = new Dictionary<int, Operation.ops>();
             var correctOps = new List<(int opCode, Operation.ops)>();
             var foundOps = new List<(int opCode, Operation.ops)>();
 

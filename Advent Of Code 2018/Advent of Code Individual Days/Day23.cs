@@ -118,6 +118,6 @@ namespace Advent_Of_Code_2018
         public int Radius { get; set; }
         public (long x, long y, long z) Pos { get; set; }
         
-        public long GetDistance((long x, long y, long z) a, (long x, long y, long z) b) => (long)Math.Abs(a.x - b.x) + (long)Math.Abs(a.y - b.y) + (long)Math.Abs(a.z - b.z);
+        public long GetDistance((long x, long y, long z) a, (long x, long y, long z) b) => Math.Abs(a.x - b.x) + Math.Abs(a.y - b.y) + Math.Abs(a.z - b.z);
     }
 }

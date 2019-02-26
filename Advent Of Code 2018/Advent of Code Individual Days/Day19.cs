@@ -44,13 +44,11 @@ namespace Advent_Of_Code_2018
                 {
                     if (operations[i].Method.Name == instructions[reg[boundedReg]].instruction)
                     {
-                        //Console.WriteLine(instructions[reg[boundedReg]].instruction + " " + string.Join(",", reg));
                         operations[i](ref reg, instructions[reg[boundedReg]].a, instructions[reg[boundedReg]].b, instructions[reg[boundedReg]].c);
                         reg[boundedReg]++;
                     }
                     if(reg[boundedReg] > instructions.Count())
                     {
-                        //Console.WriteLine("Halt");
                         return reg[0];
                     }
                 }
@@ -114,7 +112,6 @@ namespace Advent_Of_Code_2018
                         //And worked into my solution using my values of R (where R == Reg)
                         if (reg[boundedReg] == 2 && reg[2] != 0)
                         {
-                            //Console.WriteLine(instructions[reg[boundedReg]].instruction + " " + string.Join(",", reg));
                             if (reg[4] % reg[2] == 0)
                             {
                                 reg[0] += reg[2];
@@ -122,14 +119,12 @@ namespace Advent_Of_Code_2018
                             reg[3] = 0;
                             reg[1] = reg[4];
                             reg[boundedReg] = 12;
-                            //Console.WriteLine(instructions[reg[boundedReg]].instruction + " " + string.Join(",", reg));
                             continue;
                         }
                         reg[boundedReg]++;
 
                         if (reg[boundedReg] > instructions.Count())
                         {
-                            //Console.WriteLine("Halted");
                             return reg[0];
                         }
                     }

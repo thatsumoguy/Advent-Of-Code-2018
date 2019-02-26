@@ -68,8 +68,6 @@ namespace Advent_Of_Code_2018
                             topXCoord = x;
                             topYCoord = y;
                             maxSize = s;
-                            //Console.SetCursorPosition(0, 1);
-                            //Console.WriteLine("Current top size: " + maxSize + " Current TopX: " + topXCoord + " Current TopY: " + topYCoord);
                         }
                     }
                 }
